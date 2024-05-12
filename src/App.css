@@ -1,0 +1,81 @@
+/* Carousel Controls */
+.swiper-button-next,
+.swiper-button-prev {
+    width: calc(var(--swiper-navigation-size)/ 44 * 47) !important;
+    border: 2px solid black;
+    border-radius: 100%;
+    padding: 2px;
+    text-align: center !important;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+.swiper-button-next{
+    color:white !important;
+    background-color: #270949 !important;
+}
+.swiper-button-prev{
+    color:#270949 !important;
+    background-color: white !important;
+}
+.swiper{
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+    height: fit-content;
+}
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    top: -20% !important;
+    right: 0% !important;
+    left: auto !important;
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    top: -20% !important;
+    left: auto !important;
+    right: 5% !important;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 2rem !important;
+}
+@media screen and (min-width: 640px) and (max-width : 768px){
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+    top: -10% !important;
+    right: -5% !important;
+    left: auto !important;
+   }
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    top: -10% !important;
+    left: auto !important;
+    right: 12% !important;
+}
+}
+@media screen and (max-width : 640px){
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+    top: -2.5rem !important;
+    right: -1rem !important;
+    left: auto !important;
+   }
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    top: -2.5rem !important;
+    left: auto !important;
+    right: 2.5rem !important;
+}
+}
+@media screen  and (min-width: 768px) and (max-width : 1024px){
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+    top: -2rem !important;
+    right: -4rem !important;
+    left: auto !important;
+   }
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    top: -2rem !important;
+    left: auto !important;
+    right: 0rem !important;
+}
+}
